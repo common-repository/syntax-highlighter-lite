@@ -1,0 +1,100 @@
+.str { color: #080; }
+.kwd { color: #008; font-weight: bold; }
+.com { color: #800; }
+.typ { color: #606; font-weight: bold; }
+.lit { color: #066; }
+.pun { color: #660; }
+.pln { color: #000; }
+.tag { color: #008; font-weight: bold; }
+.atn { color: #606; }
+.atv { color: #080; }
+.dec { color: #606; }
+
+pre.prettyprint {
+	margin: 0 0 12px 0;
+	font-family: "Ubuntu Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	font-weight: normal;
+	font-size: 14px;
+	overflow-x: scroll;
+}
+pre.prettyprint b, pre.prettyprint strong { font-weight: bold; }
+pre.prettyprint {
+	background-color: #FFFFFF;
+	border: 0 none;
+	padding: 0 12px 0 0;
+	border-left: 3px solid #7AD03A;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+pre.prettyprint:hover {
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* More themes */
+
+/* Obsidian Block */
+/*
+.str { color: #EC7600; }
+.kwd { color: #93C763; }
+.com { color: #66747B; }
+.typ { color: #678CB1; }
+.lit { color: #FACD22; }
+.pun { color: #F1F2F3; }
+.pln { color: #F1F2F3; }
+.tag { color: #8AC763; }
+.atn { color: #E0E2E4; }
+.atv { color: #EC7600; }
+.dec { color: purple; }
+pre.prettyprint { background-color: #000000; }
+*/
+
+/* Sunburst */
+/*
+pre .str, code .str { color: #65B042; }
+.kwd { color: #E28964; }
+.com { color: #AEAEAE; }
+.typ { color: #89bdff; }
+.lit { color: #3387CC; }
+.pun { color: #ffffff; }
+.pln { color: #ffffff; }
+.tag { color: #89bdff; }
+.atn { color: #bdb76b; }
+.atv { color: #65B042; }
+.dec { color: #3387CC; }
+pre.prettyprint { background-color: #000000; }
+*/
+
+/* Doxy */
+/*
+.str { color: #fec243; }
+.kwd { color: #8470FF; }
+.com { color: #32cd32; }
+.typ { color: #6ecbcc; }
+.lit { color: #dd0066; }
+.pun { color: #8B8970; }
+.pln { color: #f0f0f0; }
+.tag { color: #9c9cff; }
+.htm { color: #dda0dd; }
+.xsl { color: #d0a0d0; }
+.atn { color: #46eeee; }
+.atv { color: #EEB4B4; }
+.dec { color: #3387CC; }
+pre.prettyprint { background-color: #000000; }
+*/
+
+
+/* No selection for line numbers */
+pre .line::before { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; color: #999999; }
+
+/* Line numbers */
+pre { counter-reset: line-numbering; }
+pre .line::before { content: counter(line-numbering); counter-increment: line-numbering; padding-right: 4px; margin-right: 4px; width: 2.5em; display: inline-block; text-align: right; opacity: 0.5; background-color: #111111; }
+.line { display: inline-block; }
+
+/* Scrollbar */
+pre::-webkit-scrollbar { width: 12px; height: 6px; }
+pre::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+pre::-webkit-scrollbar-thumb { background-color: #666666; }
